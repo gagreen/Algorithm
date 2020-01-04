@@ -2,5 +2,4 @@
 
 알고리즘 공부
 
-# JUNGOL
-* jungol.co.kr
+* <b>jungol.com<b>
