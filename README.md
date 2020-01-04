@@ -2,4 +2,4 @@
 
 알고리즘 공부
 
-* <b>jungol.com<b>
+* <b>jungol<b>
