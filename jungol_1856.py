@@ -9,4 +9,4 @@ for i in range(1, n+1):
     else :
         for j in range(i*m, (i-1)*m, -1):
             print(j, end=' ')
-    print('')
+    print('') 
