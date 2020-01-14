@@ -8,7 +8,7 @@ int main() {
 	scanf("%d", &n);
 	
 	for(i=0; i<n; i++){
-		if (i%2 != 0){
+		if (i%2 == 0){
 			for(j=0;j<n;j++){
 				arr[j][i] = index++;
 				if(index > 'Z'){
