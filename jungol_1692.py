@@ -9,5 +9,4 @@ li.append(sec//100)
 li.append(sec)
 
 for i in li :
-    print(i)
     print(fir*i)
