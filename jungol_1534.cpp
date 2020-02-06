@@ -1,33 +1,31 @@
 #include <stdio.h>
-#include <math.h>
 
-void toBin(int a);
-int toOct(int a);
-char* toHex(int a);
+void toOther(int n, int b);
 
 int main(){
 	int n, b, output;
-	
 	scanf("%d %d", &n, &b);
-	if(b == 2){
-		toBin(n);
-	}
-	else if(b == 8){
-		printf("%o", n);
-	}
-	else if(b == 16){
-		printf("%X", n);
-	}
 	
+	toOther(n, b);
 	
 	return 0;
 }
 
-void toBin(int a){
-	if(a == 0 || a == 1){
-		printf("%d", a);
+void toOther(int n, int b){
+	if(n < b){
+		if(n >= 10){
+			printf("%c", n + 55);
+		}
+		else {
+			printf("%d", n);
+		}
 		return;
 	}
-	toBin(a/2);
-	printf("%d", a%2);
+	toOther(n/b, b);
+	if(n%b >= 10){
+		printf("%c", n%b + 55);
+	}
+	else {
+		printf("%d", n%b);
+	}
 }
