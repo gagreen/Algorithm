@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-	int input[100], paper[100][100]={0,};
+	int paper[100][100]={0,};
 	int loop, w, h, i, j, k, area=0;
 		
 	scanf("%d", &loop);
