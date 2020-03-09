@@ -6,7 +6,6 @@ k = int(k)
 data = input("").split()
 data.sort()
 data = ' '.join(data)
-print(data)
 
 com = list(map(' '.join, combinations([str(i) for i in range(1,n+1)], k)))
 
