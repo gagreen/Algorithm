@@ -9,8 +9,7 @@ data = ' '.join(data)
 com = list(map(' '.join, combinations([str(i) for i in range(1,n+1)], k)))
 # 각각의 조합을 만들어 문자열로 
 check = 0
-for i in range(len(com)):
-    print(data, com[i])
+for i in range(len(com)-1):
     if data == com[i]:
         check = 1
         print(com[i+1])
