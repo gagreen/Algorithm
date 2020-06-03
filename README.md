@@ -2,4 +2,6 @@
 
 알고리즘 공부
 
-* <b>jungol<b>
+* <b>Codeup<b>
+* <b>JUNGOL<b>
+* <b>프로그래머스<b>
