@@ -3,4 +3,4 @@ SELECT milk.CART_ID
     FROM (SELECT CART_ID FROM CART_PRODUCTS WHERE NAME = '우유') milk,
          (SELECT CART_ID FROM CART_PRODUCTS WHERE NAME = '요거트') yogurt
     WHERE milk.CART_ID = yogurt.CART_ID
-    ORDER BY 1;
+    ORDER BY 1; 
