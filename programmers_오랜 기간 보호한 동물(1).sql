@@ -1,0 +1,17 @@
+-- 코드를 입력하세요
+-- 코드를 입력하세요
+-- SELECT ai.NAME, ai.DATETIME
+--     FROM ANIMAL_INS ai
+--     WHERE ai.ANIMAL_ID NOT IN (SELECT ANIMAL_ID FROM ANIMAL_OUTS) AND ROWNUM <= 3
+--     ORDER BY ai.DATETIME
+
+
+SELECT NAME, DATETIME
+    FROM (
+        SELECT ai.NAME, ai.DATETIME 
+            FROM ANIMAL_INS ai LEFT JOIN ANIMAL_OUTS ao
+                ON (ai.ANIMAL_ID = ao.ANIMAL_ID)
+            WHERE ao.ANIMAL_ID IS NULL
+            ORDER BY ai.DATETIME
+    )
+    WHERE ROWNUM <= 3
