@@ -1,7 +1,16 @@
--- 코드를 입력하세요
+-- 코드를 입력하세요 ORACLE
 SELECT ANIMAL_ID, NAME
     FROM (SELECT ai.ANIMAL_ID, ai.NAME
         FROM ANIMAL_INS ai, ANIMAL_OUTS ao
         WHERE ai.ANIMAL_ID = ao.ANIMAL_ID 
         ORDER BY ao.DATETIME - ai.DATETIME DESC)
     WHERE ROWNUM <= 2
+
+
+-- 코드를 입력하세요 MySQL
+
+SELECT ai.ANIMAL_ID, ai.NAME
+    FROM ANIMAL_INS ai, ANIMAL_OUTS ao
+    WHERE ai.ANIMAL_ID = ao.ANIMAL_ID 
+    ORDER BY ao.DATETIME - ai.DATETIME DESC
+    LIMIT 2
