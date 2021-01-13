@@ -1,2 +1,5 @@
 #Executables
 *.exe
+
+#GCC
+gmon.out
